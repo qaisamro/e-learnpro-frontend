@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-export default function CourseViewer() {
-  return (
-    <div className="p-10">
-      <h2 className="text-2xl font-bold mb-4">Course Viewer</h2>
-      <p className="text-gray-600">Video and content of the selected course.</p>
-    </div>
-  );
-}
-=======
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
@@ -274,4 +264,3 @@ export default function CourseViewer() {
     </div>
   );
 }
->>>>>>> f34cce3 (تعديلات من جهاز آخر)

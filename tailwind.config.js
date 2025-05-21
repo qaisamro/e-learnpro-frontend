@@ -2,12 +2,6 @@
 export default {
   content: [
     "./index.html",
-<<<<<<< HEAD
-    "./src/**/*.{js,jsx}"
-  ],
-  theme: {
-    extend: {},
-=======
     "./src/**/*.{js,jsx}",
   ],
   theme: {
@@ -28,7 +22,6 @@ export default {
         },
       },
     },
->>>>>>> f34cce3 (تعديلات من جهاز آخر)
   },
   plugins: [],
 };

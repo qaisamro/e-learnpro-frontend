@@ -96,20 +96,6 @@ export default function AdminLayout() {
           </NavLink>
 
           <NavLink 
-<<<<<<< HEAD
-            to="/admin/settings" 
-            className={({isActive}) => `
-              flex items-center gap-3 px-4 py-3 rounded-xl
-              transition-all duration-300 group
-              ${isActive ? 
-                'bg-gradient-to-r from-emerald-500/15 to-emerald-500/5 text-emerald-600 shadow-sm' : 
-                'hover:bg-gray-100/50 text-gray-500 hover:text-gray-700'}
-            `}
-          >
-            <Cog6ToothIcon className="w-5 h-5" />
-            <span className="font-medium">Settings</span>
-          </NavLink>
-=======
           to="/admin/settings" 
           className={({isActive}) => `
             flex items-center gap-3 px-4 py-3 rounded-xl
@@ -123,10 +109,8 @@ export default function AdminLayout() {
           <span className="font-medium">Settings</span>
         </NavLink>
 
->>>>>>> f34cce3 (تعديلات من جهاز آخر)
         </nav>
 
-        {/* Footer Section */}
         <div className="border-t border-gray-200/30 pt-4">
           <button 
             onClick={handleLogout}
@@ -138,7 +122,6 @@ export default function AdminLayout() {
         </div>
       </aside>
 
-      {/* Main Content Area */}
       <main className="flex-1 ml-72 p-8">
         {/* Sticky Header */}
         {/* <div className={`sticky top-0 mb-8 flex justify-between items-center bg-white/80 backdrop-blur-md py-4 z-40 ${isScrolled ? 'border-b border-gray-200/30' : ''}`}>

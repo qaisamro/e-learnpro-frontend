@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-export default function DashboardHome() {
-  return (
-    <div className="p-10">
-      <h2 className="text-2xl font-bold mb-4">Student Dashboard</h2>
-      <p className="text-gray-600">Welcome to your dashboard.</p>
-    </div>
-  );
-}
-=======
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -65,4 +55,3 @@ export default function DashboardHome() {
     </div>
   );
 }
->>>>>>> f34cce3 (تعديلات من جهاز آخر)
