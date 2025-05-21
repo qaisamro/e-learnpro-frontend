@@ -96,6 +96,7 @@ export default function AdminLayout() {
           </NavLink>
 
           <NavLink 
+<<<<<<< HEAD
             to="/admin/settings" 
             className={({isActive}) => `
               flex items-center gap-3 px-4 py-3 rounded-xl
@@ -108,6 +109,21 @@ export default function AdminLayout() {
             <Cog6ToothIcon className="w-5 h-5" />
             <span className="font-medium">Settings</span>
           </NavLink>
+=======
+          to="/admin/settings" 
+          className={({isActive}) => `
+            flex items-center gap-3 px-4 py-3 rounded-xl
+            transition-all duration-300 group
+            ${isActive ? 
+              'bg-gradient-to-r from-emerald-500/15 to-emerald-500/5 text-emerald-600 shadow-sm' : 
+              'hover:bg-gray-100/50 text-gray-500 hover:text-gray-700'}
+          `}
+        >
+          <Cog6ToothIcon className="w-5 h-5" />
+          <span className="font-medium">Settings</span>
+        </NavLink>
+
+>>>>>>> f34cce3 (تعديلات من جهاز آخر)
         </nav>
 
         {/* Footer Section */}

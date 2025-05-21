@@ -113,7 +113,11 @@ export default function Courses() {
                     )}
                   </div>
                   <Link
+<<<<<<< HEAD
                     to={`/courses/${course.id}`}
+=======
+                    to={`/`}
+>>>>>>> f34cce3 (تعديلات من جهاز آخر)
                     className="flex items-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg transition-colors duration-200"
                   >
                     <span>Enroll Now</span>

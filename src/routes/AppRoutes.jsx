@@ -15,6 +15,21 @@ import ManageUsers from "../pages/admin/ManageUsers";
 
 import ProtectedRoute from "./ProtectedRoute";
 import AdminLayout from "../layouts/AdminLayout";
+<<<<<<< HEAD
+=======
+import UserLayout from "../layouts/UserLayout";
+import AllCourses from "../pages/dashboard/AllCourses";
+import Settings from "../pages/admin/Settings";
+import EditUser from "../pages/admin/EditUser";
+import Profile from "../pages/dashboard/Profile";
+import UserSettings from "../pages/dashboard/UserSettings";
+
+
+
+
+
+
+>>>>>>> f34cce3 (تعديلات من جهاز آخر)
 
 
 export default function AppRoutes() {
@@ -28,6 +43,7 @@ export default function AppRoutes() {
 
       {/* Student Dashboard (role: user) */}
       <Route
+<<<<<<< HEAD
         path="/dashboard"
         element={
           <ProtectedRoute allowedRole="user">
@@ -51,6 +67,23 @@ export default function AppRoutes() {
           </ProtectedRoute>
         }
       />
+=======
+  path="/dashboard"
+  element={
+    <ProtectedRoute allowedRole="user">
+      <UserLayout />
+    </ProtectedRoute>
+  }
+>
+  <Route index element={<DashboardHome />} />
+  <Route path="my-courses" element={<MyCourses />} />
+  <Route path="courses/:id" element={<CourseViewer />} />
+  <Route path="all-courses" element={<AllCourses />} />
+  <Route path="profile" element={<Profile />} />
+  <Route path="settings" element={<UserSettings />} /> {/* ✅ هذا هو السطر الجديد */}
+</Route>
+
+>>>>>>> f34cce3 (تعديلات من جهاز آخر)
 
       {/* Admin Dashboard */}
      <Route
@@ -64,6 +97,14 @@ export default function AppRoutes() {
   <Route index element={<AdminDashboard />} />
   <Route path="courses" element={<ManageCourses />} />
   <Route path="users" element={<ManageUsers />} />
+<<<<<<< HEAD
+=======
+  <Route path="settings" element={<Settings />} />
+  <Route path="users/:id/edit" element={<EditUser />} />
+
+  
+
+>>>>>>> f34cce3 (تعديلات من جهاز آخر)
 </Route>
 
     </Routes>
